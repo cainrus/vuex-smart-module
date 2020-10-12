@@ -857,6 +857,10 @@ describe('Module', () => {
 
     const foo = createMapper(fooModule)
 
+    foo.mapGetters([
+        'double', // click to defenition is not working.
+    ]);
+
     let store: Vuex.Store<any>
 
     beforeEach(() => {
